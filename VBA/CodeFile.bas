@@ -1,4 +1,4 @@
-Attribute VB_Name = "ģ��1"
+Attribute VB_Name = "CodeFile"
 Sub RemoveDuplicatesAndMerge()
     Dim lastRow As Long
     Dim i As Long
@@ -20,7 +20,7 @@ Sub RemoveDuplicatesAndMerge()
     
     For j = 2 To cc
     
-    '�жϵ�Ԫ��ո��ж��ٸ�
+    '判断单元格空格有多少个
 
 '    Range("d" & j) = "=LEN(C" & j & ")-LEN(SUBSTITUTE(C" & j & "," & """" & " " & """" & "," & """" & "" & """" & "))+1"
     sr = Range("c" & j)
@@ -32,6 +32,6 @@ Sub RemoveDuplicatesAndMerge()
 End Sub
 
 
-'�˴���ᰴ��A�е���������Ȼ����������У�����ڵ�ǰ�к�ǰһ���о�����ͬ����ֵ��
-'����Ӧ��B��ֵ�ϲ���һ�𣬲�ɾ����ǰ�С���ע�⣬�ںϲ�B������ʱ��
-'�˴���ʹ�ö�����ո�ָ������������Ҫ��ͬ�ķָ��������޸ĸ��������������Ҫ��
+'此代码会按照A列的升序排序，然后遍历所有行，如果在当前行和前一行中具有相同的数值，
+'则将相应的B列值合并在一起，并删除当前行。请注意，在合并B列数据时，
+'此代码使用逗号与空格分隔符。如果您需要不同的分隔符，请修改该语句以满足您的要求。

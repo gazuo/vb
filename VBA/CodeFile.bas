@@ -1,4 +1,4 @@
-Attribute VB_Name = "CodeFile"
+Attribute VB_Name = "2"
 Sub RemoveDuplicatesAndMerge()
     Dim lastRow As Long
     Dim i As Long
